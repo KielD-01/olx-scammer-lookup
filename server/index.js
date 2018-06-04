@@ -1,6 +1,6 @@
 const hApi = require('hapi');
 
-const hApiServer = hApi.Server(~~process.env.PORT || 3000, '0.0.0.0');
+const hApiServer = hApi.server(~~process.env.PORT || 3000, '0.0.0.0');
 
 hApiServer
     .route({

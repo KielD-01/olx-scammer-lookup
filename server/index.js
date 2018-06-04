@@ -6,6 +6,15 @@ const hApiServer =
 hApiServer
     .route({
         method: 'GET',
+        path: '/',
+        handler(r, h) {
+            return {
+                dev: 'romanko95.rk@gmail.com'
+            }
+        }
+    })
+    .route({
+        method: 'GET',
         path: '/get-phones/{id}/{token}',
         handler: function (r, h) {
             const phonesUrl = `https://www.olx.ua/ajax/misc/contact/phone/${r.params.id}/?pt=${r.params.token}`;

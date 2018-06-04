@@ -1,0 +1,42 @@
+{
+  "name": "olx-scammer-lookup-service",
+  "version": "1.0.0",
+  "description": "OLX Scammer Lookup Service for Browsers like Google Chrome, Opera",
+  "main": "index.js",
+  "scripts": {
+    "purge": "rm -rf node_modules/",
+    "dev": "npm i && gulp --watch && node ./server/index.js",
+    "prod": "npm i && gulp --production && node ./server/index.js",
+    "rebuild-dev": "npm run purge && npm run dev",
+    "rebuild-prod": "npm run purge && npm run prod",
+    "start": "node ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KielD-01/olx-scammer-lookup.git"
+  },
+  "keywords": [
+    "olx",
+    "scam",
+    "lookup",
+    "api"
+  ],
+  "author": "Roman Kozin <romanko95.rk@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/KielD-01/olx-scammer-lookup/issues"
+  },
+  "homepage": "https://github.com/KielD-01/olx-scammer-lookup#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-pipe": "^1.0.4",
+    "gulp-scss": "^1.4.0",
+    "gulp-uglify": "^3.0.0",
+    "hapi": "^17.5.1",
+    "jquery": "^2.2.4",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5"
+  }
+}

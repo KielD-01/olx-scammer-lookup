@@ -24,9 +24,9 @@ hApiServer
         }
     ]);
 
-const init = async () => {
+const init = function () {
 
-    await hApiServer.start();
+    hApiServer.start();
     console.log(`Server running at: ${hApiServer.info.uri}`);
 };
 

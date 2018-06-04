@@ -1,10 +1,7 @@
 const hApi = require('hapi');
 
 const hApiServer =
-    hApi.server({
-        port: 5000,
-        host: '192.168.1.105'
-    });
+    hApi.server();
 
 hApiServer
     .route({

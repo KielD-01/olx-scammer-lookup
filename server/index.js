@@ -12,7 +12,9 @@ hApiServer
                 dev: 'romanko95.rk@gmail.com'
             }
         }
-    })
+    });
+
+hApiServer
     .route({
         method: 'GET',
         path: '/get-phones/{id}/{token}',

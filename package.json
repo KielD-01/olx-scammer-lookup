@@ -27,7 +27,7 @@
     "url": "https://github.com/KielD-01/olx-scammer-lookup/issues"
   },
   "homepage": "https://github.com/KielD-01/olx-scammer-lookup#readme",
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^4.1.0",
